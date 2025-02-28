@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Map</title>
+
+    <meta name="author" content="Evitha Pagcanlungan">
+    <link rel="icon" href="PUP-Logo.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+		<div class="logo">
+			<img src="PUP-Logo.png">
+		</div>
+        <div class="title">
+            <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+            <h4>THE COUNTRY'S 1ST POLYTECHNICU</h4>
+        </div>
+	</nav>
+
+
+<div class="map">
+
+    <h1>Maps</h1>
+
+    <div class="map-container">
+        <img src="PUPmaps.gif" alt="Map of my university" usemap="#mymap">
+    
+        <div class="areas">
+            <img src="area name.png" alt="area names" width="600">
+        </div>
+
+    </div>
+
+    <map name="mymap">
+        <!-- Add your circle points here -->
+        <area shape="circle" coords="278,336,41" href="#" onmouseover="showInfoPanel(event, 'chapel')" onmouseout="hideInfoPanel()" >
+        <area shape="rect" coords="300,53,360,85" href="#" onmouseover="showInfoPanel(event, 'pool')" onmouseout="hideInfoPanel()">
+
+        <area shape="circle" coords="321,187,14" href="#" onmouseover="showInfoPanel(event, 'obelisk')" onmouseout="hideInfoPanel()" >
+        <area shape="rect" coords="374,47,461,93" href="#" onmouseover="showInfoPanel(event, 'gym')" onmouseout="hideInfoPanel()">
+
+        <area shape="poly" coords="363,315,385,280,410,244,431,231,453,228,474,238,490,260,490,288,471,319,450,350,429,371,410,376,385,370,366,349" href="#" onmouseover="showInfoPanel(event, 'oval')" onmouseout="hideInfoPanel()">
+        <area shape="circle" coords="514,188,7" href="#" onmouseover="showInfoPanel(event, 'gate')" onmouseout="hideInfoPanel()" >
+
+        <area shape="poly" coords="218,267,273,235,289,265,233,294" href="#" onmouseover="showInfoPanel(event, 'north wing')" onmouseout="hideInfoPanel()">
+        <area shape="poly" coords="198,215,206,209,214,200,222,182,230,166,231,147,232,133,239,131,245,132,248,156,243,167,156,180,261,190,262,202,254,205,252,211,234,216,213,216" href="#" onmouseover="showInfoPanel(event, 'lagoon')" onmouseout="hideInfoPanel()">
+
+        <area shape="poly" coords="173,102,181,99,169,49,192,43,204,90,246,79,252,99,210,113,222,160,199,167,186,117,177,118" href="#" onmouseover="showInfoPanel(event, 'library')" onmouseout="hideInfoPanel()">
+        <area shape="poly" coords="67,163,78,144,143,181,132,200" href="#" onmouseover="showInfoPanel(event, 'charlie')" onmouseout="hideInfoPanel()">
+    </map>
+
+    <div id="info-panel" style="display: none;" >
+        <!-- Add your information panel content here -->
+        <img src="pup chapel.jpg" alt="" width="300">
+        <h2>Header</h2>
+        <p>this is the information</p>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-con">
+        <p>Copyright &copy; June 2023 by Evitha Pagcanlungan.</p>
+    </div>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

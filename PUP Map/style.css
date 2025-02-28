@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+
+}
+
+/*Navigation*/
+nav {
+	background-color: #ffffff;
+	display: flex;
+	padding: 18px;
+    height: 54px;
+    align-items:flex-start;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+
+.logo img {
+	height: 60px;
+    margin-left: 10px;
+	margin-right: 16px;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    font-family:'Cardo', serif;
+}
+  
+.title h1 {
+    margin: 0;
+    color:#8e1313;
+    font-size: 20px;
+    font-weight: 700 bold;
+
+}
+  
+.title h4 {
+    margin-top: 4px;
+    color: rgb(139, 139, 139);
+    font-size: 14px;
+    font-weight: 700 bold;
+
+}
+
+
+/*main*/
+h1 {
+    margin-top: 2rem;
+    margin-left: 60px;
+    color:#8e1313;
+    font-size: 25px;
+}
+
+.map {
+    flex-grow: 1;
+    min-height: 80vh; 
+    flex-direction: column;
+    margin: 2rem 2rem 2rem 2rem;
+
+    position: relative;
+    max-width:93%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.map .map-container {
+    display: flex;
+    align-items: center;
+}
+  
+.map .map-container img {
+    margin-left: 60px;
+    border-radius: 10px;
+    border: none;
+}
+
+.map .map-container .areas {
+    margin-right: 20px;
+}
+
+#info-panel {
+    position: absolute;
+    background-color: #872d2d;
+    border-radius: 10px;
+    border: none; 
+    padding: 15px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+}
+  
+  #info-panel img {
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 10px; 
+}
+  
+#info-panel h2{
+    font-size: 20px;
+    color: #efd057;
+    max-width: 90%; 
+    margin: 10px 0;
+}
+
+#info-panel p{
+    font-size: 12px;
+    color: #ededed;
+    margin: 10px 0; /* Add margin for spacing */
+    flex-grow: 1;
+}
+
+
+/*footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-con {
+    font-size: 12px;
+}
+
+.footer p{
+    margin-right: 1.5rem;
+    color:#000000;
+}
