@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url("bluee.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3dc4d0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 20px;
+	padding: 5px 5px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: #3dc4d0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-bx {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.input-bx label {
+    color: #333;
+}
+
+.form :where(.input-bx input, .select-bx) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 8px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #707070;
+}
+
+.input-bx input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+/*gender*/
+.form .gender-bx {
+    margin-top: 20px;
+}
+
+.gender-bx h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.gender label {
+    color: #707070;
+}
+
+.form :where(.gender-choices, .gender) {
+    display: flex;
+    align-items: center;  
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+/*address*/
+.address h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.address .input-box input {
+    height: 50px;
+    width: 100%;
+    margin-top: 8px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #707070;
+}
+  
+.address .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+  
+.address .input-box select {
+    height: 50px;
+    width: 100%;
+    margin-top: 8px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #707070;
+}
+
+/*where did you hear about us*/
+.form .check-bx {
+    margin-top: 20px;
+}
+
+.check-bx h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.check-bx label{
+    color: #707070;
+}
+
+input[type="checkbox"]:checked{
+    color: #57e9f4;
+}
+
+label:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.form :where(.check-bx input, .check-bx label) {
+    cursor: pointer;
+}
+
+/*membership*/
+.form .membership {
+    margin-top: 20px;
+}
+
+.membership h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.membership label {
+    color: #707070;
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked{
+    color: #4fe9f4;
+}
+
+label:not(:last-child) {
+    margin-bottom: 5px;
+    
+}
+
+.form :where(.membership input, .membership label) {
+    cursor: pointer;
+}
+
+/*contact*/
+.form .contact {
+    margin-top: 20px;
+}
+
+.contact h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.contact label {
+    color: #707070;
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked{
+    color: #4fe9f4;
+}
+
+label:not(:last-child) {
+    margin-bottom: 5px;
+    
+}
+
+.form :where(.contact input, .contact label) {
+    cursor: pointer;
+}
+
+/*frame for rules and policy*/
+.frame{
+    margin-top: 2rem;
+    padding: 5px 10px 20px 10px;
+	border: 1px solid #c2c2c2;
+    border-radius: 8px;
+}
+
+
+/*rules*/
+.form .rules {
+    margin-top: 20px;
+}
+
+.rules h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.rules p{
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.rules label{
+    color: #707070;
+}
+
+input[type="checkbox"]:checked{
+    color: #57e9f4;
+}
+
+label:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.form :where(.rules input, .rules label) {
+    cursor: pointer;
+}
+
+/*privacy*/
+.form .privacy {
+    margin-top: 30px;
+}
+
+.privacy h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.privacy p{
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.privacy label{
+    color: #707070;
+}
+
+input[type="checkbox"]:checked{
+    color: #57e9f4;
+}
+
+label:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.form :where(.privacy input, .privacy label) {
+    cursor: pointer;
+}
+
+/*note*/
+.form .note p{
+    margin-top: 20px;
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    color: #707070;
+}
+
+/*submit*/
+.form button {
+    height: 55px;
+    width: 100%;
+    background-color: #3dc4d0;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #27b3bd;
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-choices, .gender) {
+        row-gap: 15px;
+    }
+}
+
